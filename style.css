@@ -228,6 +228,9 @@ header a:hover{
     width: 70%;
     margin-left: 15%;
 }
+.thinking img{
+    width: 100%;
+}
 .thinking p{
     display: inline-block;
     text-align: left;
