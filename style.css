@@ -1,0 +1,1151 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+body {
+    font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Abel', sans-serif;
+    letter-spacing: .2em;
+}
+button{
+    font-family: 'Abel', sans-serif;
+    letter-spacing: .2em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+button:hover{
+    opacity: .5;
+    transition: .5s;
+}
+
+h1, h2, h3, h4, small{
+    font-family: 'Spinnaker', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: .2em;
+}
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+small{
+    display: inline-block;
+    margin: 5px 0 30px 0;
+    color: #999999;
+}
+.about, .thinking, .skill, .works, .blog{
+    margin-top: 80px;
+}
+p {
+    letter-spacing: .2em;
+    line-height: 1.8;
+}
+ul {
+    list-style: none;
+}
+/* ヘッダー */
+header{
+    height: 200px;
+}
+header .triangle{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 770px;
+    height: 200px;
+    background-color: #f4f4f3;
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    transform-origin: left bottom;
+    -webkit-transform-origin: left bottom;
+}
+header .top{
+    position: fixed;
+    left: 50px;
+    top: 30px;
+    color: inherit;
+    font-size: 14px;
+    z-index: 100;
+}
+header nav ul{
+    position: fixed;
+    text-align: left;
+    opacity: .3;
+    text-decoration: underline;
+    left: 50px;
+    top: 70px;
+    color: inherit;
+    font-size: 14px;
+    z-index: 100;
+}
+.graduate nav ul{
+    margin-left: 20px;
+}
+header a:hover{
+    opacity: .5;
+    transition: .4s;
+}
+/* 見出し */
+.index .circle{
+    border: 1px dashed #868484;
+    box-sizing: border-box;
+    width: 400px;
+    height: 400px;
+    margin-left: 35%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+.left{
+    position: absolute;
+    top: 250px;
+    margin-left: 35%;
+    transform: translateX(-50%);
+}
+.left h1{
+    transform: rotate(-10deg);
+    margin-bottom: 40px;
+}
+.index .triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 200px 346.4px 200px;
+    border-color: transparent transparent #6CBAE7 transparent;
+    transform: rotate(-15deg) translateX(-50%);
+
+    position: absolute;
+    top: 100px;
+    margin-left: 55%;
+    z-index: -1;
+}
+.word{
+    display: flex;
+    position: absolute;
+    top: 100px;
+    margin-left: 60%;
+}
+.word p{
+    font-size: 14px;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    letter-spacing: .8em;
+    line-height: 3;
+    padding-top: 10px;
+    border-left: 1px solid ;
+}
+.one{
+    margin-top: 200px;
+}
+.dog{
+    position: absolute;
+    top: 50px;
+    margin-left: 48%;
+    transform: rotate(-40deg) translateX(-50%);
+}
+.dog li:nth-child(1){
+    font-size: 30px;
+    margin-right: 40px;
+}
+.dog li:nth-child(2){
+    font-size: 25px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.dog li:nth-child(3){
+    font-size: 20px;
+    margin-top: 10px;
+}
+.dog li:nth-child(4){
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.dog li:nth-child(5){
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+/* ABOUT ME */
+.about{
+    position: relative;
+    padding: 50px 0;
+}
+.about_back{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#E2E2E2;;
+    -webkit-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+    z-index: -1;
+}
+.ex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about img{
+    width: 180px;
+    border-radius: 50%;
+    border: 5px solid #CBCBCB;
+    margin-right: 50px;
+}
+.prof{
+    text-align: left;
+}
+.prof h3{
+    margin-bottom: 10px;
+}
+
+/* THINKING */
+.thinking p{
+    display: inline-block;
+    text-align: left;
+}
+.process{
+    position: relative;
+    margin-top: 50px;
+}
+.circle_left{
+    position: absolute;
+    display: inline-block;
+    margin: -40px 0 0 -50px;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: #D9EDF9;
+    border-radius: 50%;
+    z-index: -1;
+}
+.circle_right{
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    margin: 150px 0 0 250px;
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: #D9EDF9;
+    border-radius: 50%;
+    z-index: -1;
+}
+/* SKILL */
+.skill ul{
+    display: inline-flex;
+}
+.fa-home{
+    text-decoration: none;
+    font-size: 100px;
+    padding: 50px;
+    background-color: #FAEA6A;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.fa-chart-line{
+    text-decoration: none;
+    font-size: 100px;
+    padding: 50px;
+    background-color:#DBDAD7;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.fa-desktop{
+    text-decoration: none;
+    font-size: 100px;
+    padding: 50px;
+    background-color:#95CDCE;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.fa-book{
+    text-decoration: none;
+    font-size: 100px;
+    padding: 50px;
+    width: 100px;
+    background-color:#9E89DB;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.research .fa-book{
+    text-decoration: none;
+    font-size: 30px;
+    width: 30px;
+    padding: 20px;
+    background-color:#9E89DB;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.fa-robot{
+    text-decoration: none;
+    padding: 45px 65px 55px 35px;
+    font-size: 100px;
+    width: 100px;
+    background-color:#6CBAE7;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.after{
+    margin-top: 50px;
+}
+.skill li{
+    margin: 0 20px 0 20px;
+}
+.skill li p{
+    text-align: left;
+    width: 250px;
+    margin-bottom: 20px;
+}
+/* WORKS */
+.works{
+    position: relative;
+    padding: 50px 0;
+}
+.works_back{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FAEA6A;
+    -webkit-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+    z-index: -1;
+}
+.works .img{
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* スライドショー */
+.slider{
+    width: 990px;
+}
+.parent{
+    position: relative;
+}
+.parent p{
+    position: absolute;
+    font-size: 18px;
+    font-weight: bolder;
+    color:black;
+    font-family: 'Spinnaker', sans-serif;
+    letter-spacing: .2em;
+    background-color: white;
+    opacity: .7;
+    width: 300px;
+    top: 100px;
+    padding: 50px 0;
+    left: 5px;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+.parent p:hover{
+    opacity: 0;
+    transition-duration: .5s;
+}
+.slider img{
+    cursor: pointer;
+    width: 300px;
+    height: 200px;
+    margin: 0 30px 20px 20px;
+    object-fit: cover;
+    box-shadow: 4px 4px 6px black;
+}
+
+.slider {
+    position: relative;
+}
+.slider a div{
+    width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+    align-items: center; 
+}
+.slider .slick-prev:before,
+.slider .slick-next:before {
+    font-size: 30px;
+    color: #000;
+}
+/* BLOG */
+.build{
+    display: inline-block;
+    width: 400px;
+    border: 1px solid #999999;
+    padding: 40px;
+}
+.fa-cogs{
+    margin: 40px 0;
+    font-size: 150px;
+}
+/* ARCHITECTURE WORKS */
+.architect{
+    width: 100%;
+    height: auto;
+    margin-top: -120px;
+}
+.architect .bubble{
+    position: absolute;
+    right: 5%;
+}
+.blue{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #D9EDF9;
+}
+.architect i{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    font-size: 30px;
+    padding: 20px;
+}
+.architect h2{
+    position: absolute;
+    right: 12%;
+    text-align: right;
+    padding-left:100px;
+    text-indent:-100px;
+}
+.architect p{
+    font-size: 14px;
+    color: #A7A7A7;
+}
+.architect h4{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: left;
+    display: inline-block;
+    color: #6F6F6F;
+}
+.architect .content{
+    width: 100%;
+    margin-top: 50px;
+    display: inline-block;
+}
+.architect .content small{
+    margin: 0 0 10px 0;
+}
+.architect .first_content{
+    width: 100%;
+    margin-top: 180px;
+    display: inline-block;
+}
+.architect .img ul{
+    display: inline-flex;
+}
+.architect .img img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 20px;
+}
+.architect .img img:hover{
+    transform: scale(1.05,1.05);
+    transition: .5s;
+}
+.architect .content .big img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.architect .img .big .row img{
+    width: 300px;
+    height: auto;
+    margin: 0 20px 20px 0;
+}
+.architect .img .big .metal img{
+    width: 300px;
+    height: 295px;
+}
+.architect .physics h4{
+    margin: 20px 0 10px 0 ;
+}
+.architect .physics img{
+    width: 640px;
+    margin-top: 10px;
+}
+.architect .img .gis{
+    align-items: center;
+    text-align: left;
+}
+.architect h3{
+    text-align: left;
+    margin-left: 20%;
+}
+.architect small{
+    margin: 20px 0 10px 0;
+}
+/* DATA SCIENCE */
+.data_science{
+    margin-top: 80px;
+    position: relative;
+}
+.data_science .bubble{
+    position: absolute;
+    left: 5%;
+}
+.data_science .content_left, .data_science .content_right{
+    width: 100%;
+    margin-top: 10px;
+    display: inline-block;
+}
+.data_science .content_left{
+    margin-top: 120px;
+}
+.data_science .content_left_after{
+    margin-top: 50px;
+}
+.data_science h2{
+    position: absolute;
+    left: 12%;
+    margin-top: 20px;
+    text-align: right;
+    padding-left:100px;
+    text-indent:-100px;
+}
+.data_science i{
+    position: absolute;
+    top: -50px;
+    left: 100px;
+    font-size: 30px;
+    padding: 20px;
+}
+.data_science .img{
+    display: inline-flex;
+    align-items: center;
+    margin: 30px 0 50px 0;
+}
+.data_science .img img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.data_science .content_left_after img{
+    margin: 0 20px;
+}
+.data_science .content_left .title,.data_science .content_left_after .title{
+    margin-left: 50px;
+}
+.data_science .content_right .title{
+    margin-right: 50px;
+}
+.title{
+    text-align: center;
+    line-height: 1.5;
+}
+.title h4{
+    text-align: left;
+}
+.content_left_after h4{
+    text-align: center;
+}
+.title p{
+    text-align: center;
+    color: #6C6C6C;
+    font-size: 14px;
+}
+/* WEB APPLICATION */
+.web{
+    width: 100%;
+    height: auto;
+    margin-top: 120px;
+}
+.web .bubble{
+    position: absolute;
+    right: 5%;
+}
+.blue{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #D9EDF9;
+}
+.web i{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    font-size: 30px;
+    padding: 20px;
+}
+.web h2{
+    position: absolute;
+    right: 12%;
+    margin-top: 20px;
+    text-align: right;
+    padding-left:100px;
+    text-indent:-100px;
+}
+.web p{
+    color: #6C6C6C;
+    font-size: 14px;
+}
+.web .first_content{
+    width: 100%;
+    margin-top: 180px;
+    display: inline-block;
+}
+.web img{
+    width: 640px;
+    margin-top: 20px;
+}
+.web img:hover{
+    transform: scale(1.05,1.05);
+    transition: .5s;
+}
+/* RESEARCH */
+.research{
+    margin-top: 80px;
+    position: relative;
+}
+.research .bubble{
+    position: absolute;
+    left: 5%;
+}
+.research .first_content{
+    width: 100%;
+    margin-top: 180px;
+    display: inline-block;
+}
+.research .content_left{
+    margin-top: 120px;
+}
+.research .content_left_after{
+    margin-top: 50px;
+}
+.RPA .content_left_after{
+    margin-top: 50px;
+}
+.research h2{
+    position: absolute;
+    left: 12%;
+    margin-top: 20px;
+    text-align: right;
+    padding-left:100px;
+    text-indent:-100px;
+}
+.research i{
+    position: absolute;
+    top: -50px;
+    left: 100px;
+    font-size: 30px;
+    padding: 20px;
+}
+.research h4{
+    display: inline-block;
+    text-align: left;
+}
+.research .img{
+    display: inline-flex;
+}
+.research img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px 20px 0 20px;
+
+}
+.research img:hover{
+    transform: scale(1.05,1.05);
+    transition: .5s;
+}
+/* RPA */
+.RPA{
+    width: 100%;
+    height: auto;
+    margin-top: 120px;
+}
+.RPA .bubble{
+    position: absolute;
+    right: 5%;
+}
+.blue{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #D9EDF9;
+}
+.RPA i{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    padding: 18px 23px 22px 17px;
+    width: 30px;
+    font-size: 30px;
+}
+.RPA h2{
+    position: absolute;
+    right: 12%;
+    margin-top: 20px;
+    text-align: right;
+    padding-left:100px;
+    text-indent:-100px;
+}
+.RPA .first_content{
+    width: 100%;
+    margin-top: 180px;
+    display: inline-block;
+}
+.RPA img{
+    width: 300px;
+    margin-top: 20px;
+    margin: 0 20px;
+}
+.RPA .img{
+    display: inline-flex;
+    align-items: center;
+    margin: 30px 0 50px 0;
+}
+.RPA .first_content .title{
+    margin-left: 50px;
+}
+/* 卒業設計 */
+/* 見出し */
+.graduate_work .index{
+    position: relative;
+    padding: 50px 0;
+    height: 630px;
+    margin-top: 80px;
+}
+.graduate_work .index_back{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 630px;
+    object-fit: cover;
+    background-color:#E2E2E2;
+    -webkit-transform: skewY(5deg);
+    transform: skewY(5deg);
+    z-index: -1;
+}
+.graduate_work .index p{
+    position: absolute;
+    left: 10%;
+    top: 0;
+    font-size: 18px;
+    color: white;
+    font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    letter-spacing: .8em;
+    line-height: 1.5;
+    padding-top: 10px;
+    border-left: 1px solid ;
+}
+.graduate_work .work_ex p{
+    color: black;
+    font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+/* 敷地 */
+.site h3{
+    margin: 50px 0 20px 0;
+    text-align: center;
+}
+.site img{
+    width: 70%;
+}
+/* コンセプト */
+.concept{
+    position: relative;
+    padding: 50px 0;
+    height: 580px;
+    margin-top: 80px;
+}
+.concept h3{
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+.concept_back{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    background-color:#E2E2E2;
+    -webkit-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+    z-index: -1;
+}
+.concept_box{
+    position: relative;
+}
+.concept ul{
+    display: flex;
+    position: absolute;
+}
+.concept .concept_box p:nth-child(1){
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translateX(-90%);
+}
+.concept .concept_box p:nth-child(2){
+    position: absolute;
+    font-size: 24px;
+    top: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.concept .concept_box p:nth-child(3){
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform: translateX(-10%);
+}
+.concept .concept_left{
+    right: 50%;
+    transform: translateX(-50%);
+    top: 250px;
+}
+.concept .concept_left li:nth-child(1){
+    position: absolute;
+    left: 150px;
+    top: 70px;
+}
+.concept .concept_right li:nth-child(1){
+    position: absolute;
+    left: -150px;
+    top: -70px;
+}
+.concept .concept_right{
+    left: 50%;
+    transform: translateX(50%);
+    top: 70px;
+}
+.concept img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+/* 環境デザイン */
+.environment{
+    position: relative;
+    padding: 50px 0;
+    margin-top: 30px;
+}
+.environment h3{
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+.environment h4{
+    margin-top: 50px;
+}
+.environment .environment_right h4{
+    margin: 0;
+}
+.environment_box{
+    display: flex;
+}
+.environment_left img{
+    width: 55%;
+    margin-left: 200px;
+} 
+.environment_right img{
+    width: 90%;
+} 
+.environment_right{
+    margin-right: 200px;
+} 
+/* ダイアグラム */
+.environment_diagram{
+    width: 70%;
+    margin: 0 0 0 15%;
+}
+.environment_diagram img{
+    width: 90%;
+}
+.environment_diagram{
+    display: flex;
+}
+/* ケーススタディ */
+.environment_diagram h4,.environment_right h4{
+    margin: 0;
+    font-size: 16px;
+}
+/* 冬解析 */
+.environment_winter{
+    width: 70%;
+    margin: 0 0 0 15%;
+}
+.environment_winter{
+    display: flex;
+}
+.environment_winter h4{
+    margin: 0;
+    font-size: 16px;
+}
+.environment_winter img{
+    width: 80%;
+}
+.environment_winter li:nth-child(3){
+    padding: 30px 100px 0 50px;
+}
+.environment_ex{
+    width: 70%;
+    margin: 0 0 0 15%;
+}
+.environment h5{
+    font-family: 'Spinnaker', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: .2em;
+    color: #6C6C6C;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/* 夏解析 */
+.environment_summer{
+    width: 70%;
+    margin: 0 0 0 15%;
+}
+.environment_summer img{
+    width: 60%;
+}
+.environment_summer ul{
+    display: flex;
+    align-items: center;
+}
+.summer h4{
+    margin: 20px 0 0 0;
+}
+/* 最適化 */
+.opt{
+    position: relative;
+    padding: 80px 0;
+    margin-top: 20px;
+}
+.opt h3{
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+.opt_back{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    background-color:#E2E2E2;
+    -webkit-transform: skewY(5deg);
+    transform: skewY(5deg);
+    z-index: -1;
+}
+.opt_box{
+    position: relative;
+    display: inline-flex;
+    justify-content: space-around;
+    width: 85%;
+}
+.opt .opt_box ul{
+    width: 45%;
+}
+.opt .opt_box ul img{
+    width: 100%;
+}
+.opt_left{
+    margin-top: 20px;
+}
+.opt_right img{
+    margin-top: 20px;
+}
+.opt h4{
+    margin: 0;
+}
+/* ビジネスモデル */
+.business{
+    position: relative;
+    padding: 80px 0 0 0;
+    margin-top: 20px;
+}
+.business h3{
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.business .business_box ul{
+    position: relative;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    margin-right: 10%;
+}
+.business .business_box ul img{
+    width: 70%;
+}
+.business_box ul p{
+    text-align: left;
+    margin: 0 12%;
+}
+/* 構成ダイアグラム */
+.diagram{
+    margin-top: 80px;
+
+}
+.diagram h3{
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+.diagram img, .diagram p{
+    display: inline-block;
+    width: 60%;
+}
+/* 平面図 */
+.plan{
+    margin-top: 80px;
+}
+.plan h3{
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+.plan img{
+    width: 80%;
+}
+/* パース */
+.graphics{
+    margin-top: 80px;
+}
+.graphics h3{
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+.graphics .graphics_box{
+    display: inline-flex;
+    justify-content: space-around;
+    width: 90%;
+}
+.graphics img{
+    width: 100%;
+}
+.graphics li{
+    margin-bottom: 20px;
+}
+.graphics ul:nth-child(1) li{
+    width: 97%;
+}
+.graphics ul:nth-child(1) li:nth-child(2),.graphics ul:nth-child(1) li:nth-child(3){
+    width: 69%;
+}
+.graphics ul:nth-child(1) li:nth-child(2) img,.graphics ul:nth-child(1) li:nth-child(3) img{
+    height: 350px;
+    object-fit: cover;
+}
+.graphics ul:nth-child(2) li:nth-child(3) img,.graphics ul:nth-child(2) li:nth-child(4) img{
+    height: 330px;
+    object-fit: cover;
+}
+.graphics ul:nth-child(2){
+    position: relative;
+}
+.graphics ul:nth-child(2) li:nth-child(3),.graphics ul:nth-child(2) li:nth-child(4){
+    position: absolute;
+    left: -45%;
+    width: 145%;
+}
+.graphics ul:nth-child(2) li:nth-child(4){
+    margin-top: 356px;
+}
+/* フッター */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin-top: 100px;
+    background-color: #DDDDDD;
+}
+footer small{
+    margin: 0;
+}
+.rights{
+    text-align: left;
+    left: 10px;
+}
+.sns_buttons{
+    display: flex;
+    font-size: 28px;
+}
+.sns_buttons a{
+    color: #000;
+    margin: 0 10px;
+}
+.sns_buttons a:hover{
+    opacity: .5;
+    transition: .5s;
+}
+/* GIST */
+.gist{
+    display: inline-block;
+    width: 70%;
+    overflow:auto;
+}
+
+.gist .blob-wrapper.data {
+    max-height:300px;
+    overflow:auto;
+}
+.gist::-webkit-scrollbar,.gist .blob-wrapper.data::-webkit-scrollbar{
+    width: 8px;
+    height: 5px;
+}
+.gist::-webkit-scrollbar-track,.gist .blob-wrapper.data::-webkit-scrollbar-track{
+    border-radius: 5px;
+}
+.gist::-webkit-scrollbar-thumb,.gist .blob-wrapper.data::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: #dfdfdf;
+    box-shadow: 0 0 3px rgb(184, 184, 184) inset;
+}
+.gist::-webkit-scrollbar-corner,.gist .blob-wrapper.data::-webkit-scrollbar-corner{
+    outline: none;
+}
