@@ -758,6 +758,7 @@ header a:hover{
     object-fit: cover;
     -webkit-transform: skewY(5deg);
     background-image: url(./images/perspective/g_main.jpg);
+    background-size: 100%;
     transform: skewY(5deg);
     z-index: -1;
 }
