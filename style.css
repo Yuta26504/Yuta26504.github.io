@@ -231,20 +231,26 @@ header a:hover{
 .thinking img{
     width: 100%;
 }
+.thinking .text{
+    display: inline-block;
+    text-align: center;
+}
 .thinking p{
     display: inline-block;
     text-align: left;
     width: 100%;
-    margin-left: 15%;
+    left: 50%;
 }
 .process{
     position: relative;
     margin-top: 50px;
+    margin: 0 auto 0 0;
 }
 .circle_left{
     position: absolute;
     display: inline-block;
-    margin: -40px 0 0 10%;
+    top: -8%;
+    margin-left: -50px;
     content: "";
     width: 100px;
     height: 100px;
@@ -255,9 +261,8 @@ header a:hover{
 .circle_right{
     position: absolute;
     display: inline-block;
-    left: 50%;
-    top: 0;
-    margin: 200px 0 0 250px;
+    top: 70%;
+    margin-left: -150px;
     content: "";
     width: 200px;
     height: 200px;
