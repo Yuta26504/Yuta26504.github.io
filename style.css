@@ -480,7 +480,7 @@ header a:hover{
     object-fit: cover;
     margin: 0 20px;
 }
-.architect .img img:hover{
+.architect .img img:hover,.architect .physics img:hover{
     transform: scale(1.05,1.05);
     transition: .5s;
 }
