@@ -150,12 +150,12 @@ header a:hover{
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
     letter-spacing: .8em;
-    line-height: 300%;
     padding-top: 10px;
     border-left: 1px solid ;
 }
 .one{
     margin-top: 200px;
+    margin-right: 30px;
 }
 .dog{
     position: absolute;
