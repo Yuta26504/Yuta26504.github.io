@@ -98,9 +98,6 @@ header nav ul{
     font-size: 14px;
     z-index: 100;
 }
-.graduate nav ul{
-    margin-left: 20px;
-}
 header a:hover{
     opacity: .5;
     transition: .4s;
